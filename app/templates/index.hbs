@@ -1,0 +1,6 @@
+{{new-site action="addWebsite"}}
+
+<div id="input"></div>
+{{#each site in content}}
+  <div {{bind-attr id=site.elementId}}>{{site.url}}</div>
+{{/each}}
